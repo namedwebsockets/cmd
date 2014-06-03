@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/richtr/namedwebsockets"
+	"github.com/namedwebsockets/proxy"
 )
 
 func main() {
