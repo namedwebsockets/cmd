@@ -8,19 +8,13 @@ import (
 )
 
 func main() {
-	name, err := os.Hostname()
+	hostname, err := os.Hostname()
 	if err != nil {
 		log.Printf("Could not determine device hostname: %v\n", err)
 		return
 	}
 
-	localHost := name
-	localPort := 9009
-
-	service := &namedwebsockets.NamedWebSocket_Service{
-		Port: localPort,
-		Host: localHost,
-	}
+	service := namedwebsockets.NewNamedWebSocketService(hostname, 9009)
 
 	// Start mDNS/DNS-SD discovery service
 	go service.StartNewDiscoveryServer()
