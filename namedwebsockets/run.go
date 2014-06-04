@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/namedwebsockets/proxy"
+	"github.com/namedwebsockets/namedwebsockets"
 )
 
 func main() {
