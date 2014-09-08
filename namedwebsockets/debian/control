@@ -1,0 +1,11 @@
+Source: namedwebsockets
+Section: devel
+Priority: extra
+Maintainer: Rich Tibbett <rich.tibbett@gmail.com>
+Build-Depends: debhelper (>= 9.1.0), golang-go
+Standards-Version: 3.9.4
+
+Package: namedwebsockets
+Architecture: any
+Description: Named WebSockets Proxy
+ Dynamic binding, peer management and local network discovery for WebSockets
