@@ -8,11 +8,11 @@ You can build your own Named WebSocket Proxy cross-platform binaries from this r
 
 * Install [`goxc`](https://github.com/laher/goxc):
 
-    go get github.com/laher/goxc
+        $> go get github.com/laher/goxc
 
 * Build your own Named WebSocket Proxy binaries using the provided [`.goxc.json`](https://github.com/namedwebsockets/cmd/blob/master/namedwebsockets/.goxc.json) configuration file as follows:
 
-    cd `go list -f '{{.Dir}}' github.com/namedwebsockets/cmd/namedwebsockets`
-    goxc
+        $> cd `go list -f '{{.Dir}}' github.com/namedwebsockets/cmd/namedwebsockets`
+        $> goxc
 
 Built platform binaries will now be available in `$GOPATH/bin/namedwebsockets-xc/`.
