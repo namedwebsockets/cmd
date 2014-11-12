@@ -20,7 +20,7 @@ func main() {
 	go service.StartProxyServer()
 
 	// Start mDNS/DNS-SD discovery service (with 10 second network polling interval)
-	go service.StartDiscoveryServer(10)
+	go service.StartDiscoveryServers(10)
 
 	// Start HTTP/WebSocket endpoint server (blocking call)
 	service.StartHTTPServer(false)
