@@ -16,12 +16,5 @@ func main() {
 
 	service := namedwebsockets.NewNamedWebSocketService(hostname, 9009)
 
-	// Start TLS-SRP Named WebSocket (wss) server
-	go service.StartProxyServer()
-
-	// Start mDNS/DNS-SD discovery service (with 10 second network polling interval)
-	go service.StartDiscoveryServers(10)
-
-	// Start HTTP/WebSocket endpoint server (blocking call)
-	service.StartHTTPServer(false)
+	service.Start()
 }
