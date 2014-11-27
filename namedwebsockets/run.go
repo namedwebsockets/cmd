@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/namedwebsockets/namedwebsockets"
+	"github.com/namedwebsockets/networkwebsockets"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 		return
 	}
 
-	service := namedwebsockets.NewNamedWebSocketService(hostname, 9009)
+	service := networkwebsockets.NewNamedWebSocketService(hostname, 9009)
 
 	service.Start()
 }
