@@ -1,0 +1,11 @@
+networkwebsockets () unreleased; urgency=low
+
+  * Rename 'namedwebsockets' to 'networkwebsockets'
+
+ -- Rich Tibbett <richtr@github>  Fri, 27 Nov 2014 15:37:24 +0100
+
+namedwebsockets () unreleased; urgency=low
+
+  * Initial import
+
+ -- Rich Tibbett <richtr@github>  Fri, 08 Sep 2014 10:02:48 +0100
