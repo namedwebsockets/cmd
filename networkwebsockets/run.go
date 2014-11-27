@@ -16,5 +16,7 @@ func main() {
 
 	service := networkwebsockets.NewNamedWebSocketService(hostname, 9009)
 
-	service.Start()
+	stopped := service.Start()
+
+	<-stopped // blocks forever or until `service.Stop()` is called
 }
