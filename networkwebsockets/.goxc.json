@@ -1,5 +1,5 @@
 {
-	"AppName": "namedwebsockets",
+	"AppName": "networkwebsockets",
 	"PrereleaseInfo" : "snapshot",
 	"PackageVersion": "0.8",
 	"TaskSettings": {
@@ -11,7 +11,7 @@
 			},
 			"metadata-deb": {
 				"Depends": "golang",
-				"Homepage": "https://github.com/namedwebsockets/namedwebsockets"
+				"Homepage": "https://github.com/namedwebsockets/networkwebsockets"
 			},
 			"other-mapped-files": {
 				"/": "deb-contents/"
