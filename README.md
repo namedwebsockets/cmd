@@ -4,7 +4,7 @@ Provides the `networkwebsockets` command, used to create and run a [Network Web 
 
 #### Building and running from source
 
-Instructions are provided on the proxy wiki for [building and running a Network Web Socket Proxy from source](https://github.com/namedwebsockets/networkwebsockets/wiki/Building-a-Named-Web-Sockets-Proxy-from-Source) provided here.
+Instructions are provided on the proxy wiki for [building and running a Network Web Socket Proxy from source](https://github.com/namedwebsockets/networkwebsockets/wiki/Building-a-Network-Web-Socket-Proxy-from-Source) provided here.
 
 #### Building platform binaries
 
