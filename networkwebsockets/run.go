@@ -19,7 +19,7 @@ func main() {
 		return
 	}
 
-	service := networkwebsockets.NewNetworkWebSocketService(hostname, *port)
+	service := networkwebsockets.NewService(hostname, *port)
 
 	stopped := service.Start()
 
