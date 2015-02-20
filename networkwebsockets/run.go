@@ -4,6 +4,8 @@ import (
 	"flag"
 	"log"
 	"os"
+	"os/signal"
+	"syscall"
 
 	"github.com/namedwebsockets/networkwebsockets"
 )
@@ -20,8 +22,16 @@ func main() {
 	}
 
 	service := networkwebsockets.NewService(hostname, *port)
+	service.Start()
 
-	stopped := service.Start()
+	go func() {
+		// Handle SIGINT and SIGTERM.
+		ch := make(chan os.Signal)
+		signal.Notify(ch, syscall.SIGINT, syscall.SIGTERM)
+		<-ch
 
-	<-stopped // blocks forever or until `service.Stop()` is called
+		service.Stop()
+	}()
+
+	<-service.StopNotify()
 }
